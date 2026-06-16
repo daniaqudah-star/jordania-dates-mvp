@@ -36,7 +36,7 @@ img {
   color: white;
   padding: 26px;
   background:
-    linear-gradient(90deg, rgba(18, 11, 6, 0.92), rgba(18, 11, 6, 0.55)),
+    linear-gradient(90deg, rgba(18, 11, 6, 0.94), rgba(18, 11, 6, 0.55)),
     url("hero-dates.jpg.JPG");
   background-size: cover;
   background-position: center;
@@ -66,6 +66,33 @@ img {
   display: grid;
   place-items: center;
   color: var(--gold-light);
+  font-size: 14px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-switch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.language-switch a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 8px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.language-switch a:hover {
+  background: rgba(255,255,255,0.12);
 }
 
 .nav-link {
@@ -323,8 +350,32 @@ h3 {
     padding: 20px;
   }
 
+  .navbar {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .brand {
+    font-size: 14px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
   .nav-link {
     display: none;
+  }
+
+  .language-switch a {
+    padding: 7px 10px;
+    font-size: 12px;
   }
 
   .hero-inner,
